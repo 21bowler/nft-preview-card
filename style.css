@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/***page-structure ***/
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    min-width: 100vw;
+}
+
+.card-container {
+    background-color: hsl(216, 50%, 16%);
+    padding: 30px;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+/****image-styling ***/
+
+.equilibrium {
+    margin: auto;
+}
+
+.eq-image {
+    border-radius: 8px;
+    display: block;
+    opacity: 1;
+    max-width: 357px;
+}
+
+.eq-view{
+    position: absolute;
+    top: 35.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+/* Hover effect of the image */
+
+.equilibrium:hover .eq-image,
+.equilibrium:active .eq-image{
+    opacity: 0.5;
+}
+
+.equilibrium:hover,
+.equilibrium:active{
+    background-color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.equilibrium:hover .eq-view,
+.equilibrium:active .eq-view{
+    opacity: 1;
+}
+
+/*** h1 styling****/
+
+.text-area h1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.text-area h1 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.text-area h1 a:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+/* paragraph of text area styling */
+
+.text-area p {
+    color:  #fff;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+/* Price List styling */
+
+.price-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.price::before{
+    content: url(images/icon-ethereum.svg);
+    position: relative;
+    margin-right: 5px;
+    top: 2px;
+}
+.price {
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+}
+
+.clock {
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+
+.left {
+    color: #fff;
+}
+
+/* Author-styling */
+
+.author{
+    display: flex;
+}
+
+.avatar {
+    width: 32px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.creation{
+    margin-top: 20px;
+    color: #fff;
+}
+
+.Jules{
+    color: white;
+    text-decoration: none;
+}
+
+.Jules:hover,
+.Jules:active{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+/* Mobile-screen view */
+
+@media screen and (max-width:375px){
+    .eq-image {
+        max-width: 250px;
+    }
+    .text-area p {
+        font-size: 20px;
+    }
+    .price{
+        font-size: 20px;
+    }
+    .left{
+        font-size: 20px;
+    }
+    .creation {
+        font-size: 19px;
+    }
+}
