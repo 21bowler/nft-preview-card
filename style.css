@@ -149,6 +149,9 @@ body{
 /* Mobile-screen view */
 
 @media screen and (max-width:375px){
+    body{
+        min-height: 100vh;
+    }
     .eq-image {
         max-width: 250px;
     }
