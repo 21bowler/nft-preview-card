@@ -146,6 +146,17 @@ body{
     color: hsl(178, 100%, 50%);
 }
 
+.footer {
+    position: absolute;
+    bottom: 30px;
+    color: #fff;
+}
+/* footer styling */
+.footer a{
+    color: #1e90ff;
+    text-decoration: none;
+}
+
 /* Mobile-screen view */
 
 @media screen and (max-width:375px){
